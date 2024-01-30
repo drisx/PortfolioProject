@@ -1,22 +1,22 @@
---SELECT *
---FROM CovidProject..CovidDeaths
---ORDER BY 3,4
+SELECT *
+FROM CovidProject..CovidDeaths
+ORDER BY 3,4
 
---SELECT *
---FROM CovidProject..CovidVaccinations
---ORDER BY 3,4
+SELECT *
+FROM CovidProject..CovidVaccinations
+ORDER BY 3,4
 
 --SELECTED DATA TO BE USED
 
---SELECT location,date,total_cases,new_cases,total_deaths,population
---FROM CovidProject..CovidDeaths
---ORDER BY 1,2
+SELECT location,date,total_cases,new_cases,total_deaths,population
+FROM CovidProject..CovidDeaths
+ORDER BY 1,2
 
 --TOTAL CASES VS TOTAL DEATHS
 
---SELECT location,date,total_cases,total_deaths,(total_deaths/total_cases)
---FROM CovidProject..CovidDeaths
---ORDER BY 1,2
+SELECT location,date,total_cases,total_deaths,(total_deaths/total_cases)
+FROM CovidProject..CovidDeaths
+ORDER BY 1,2
 
 --LIKEHOOD OF DYING IF YOU CONTACTED COVID IN NIGERIA
 SELECT location,date,total_cases,total_deaths,(total_deaths/total_cases)*100 AS DeathPercentage
